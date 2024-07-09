@@ -19,7 +19,7 @@ const Home = () => {
   useEffect(() => {
     const getStats = async () => {
       try {
-        const res = await axios.get("/users/stats", {
+        const res = await axios.get("https://abhinav-kappa.vercel.app/api/users/stats", {
           headers: {
             token:
               "Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODk3M2RkMTNiZGQ5NmU2NDQ0YWMwMSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcyMDM2MDYxMCwiZXhwIjoxNzIwNzkyNjEwfQ.JClbDEydM8V9W-moB_Ok7O5HmEEjWY_FqAsRgEJI_dI",

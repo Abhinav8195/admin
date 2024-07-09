@@ -67,7 +67,7 @@ export default function NewMovie() {
       const movieData = {
         ...movie,
       };
-      const res = await axios.post("/movies", movieData, {
+      const res = await axios.post("https://abhinav-kappa.vercel.app/api/movies", movieData, {
         headers: {
           token: "Bearer " + JSON.parse(localStorage.getItem("user")).accessToken,
         },
