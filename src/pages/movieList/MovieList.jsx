@@ -11,11 +11,9 @@ export default function MovieList() {
   const { movies, dispatch } = useContext(MovieContext);
   console.log(movies)
   useEffect(() => {
-    const fetchData = async () => {
-      await getMovies(dispatch); // Assuming getMovies returns a Promise
-    };
-    fetchData();
+    getMovies(dispatch);
   }, [dispatch]);
+   
   
 
   const handleDelete = (id) => {
